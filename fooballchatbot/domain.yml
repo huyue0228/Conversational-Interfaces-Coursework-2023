@@ -1,0 +1,54 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - bot_challenge
+  - GetInfo_numGamesPlayed
+  - GetInfo_winLossRecord
+  - GetInfo_playingNow
+  - GetInfo_lastOpponent
+  - GetInfo_nextOpponent
+  - GetInfo_lastScore
+  - GetInfo_manager
+  - GetInfo_leaguePosition
+  - GetInfo_nextGameDate
+
+entities:
+  - team
+
+slots:
+  team:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: team
+
+responses:
+  utter_greet:
+  - text:
+      Hey! What can I do for you?
+
+  utter_goodbye:
+  - text: 
+      Bye
+
+  utter_iamabot:
+  - text: 
+      I am a bot, powered by Rasa.
+
+actions:
+    - action_numGamesPlayed
+    - action_winLossRecord
+    - action_playingNow
+    - action_lastOpponent
+    - action_nextOpponent
+    - action_lastScore
+    - action_manager
+    - action_leaguePosition
+    - action_nextGameDate
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,58 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: GetInfo numGamesPlayed
+  steps:
+  - intent: GetInfo_numGamesPlayed
+  - action: action_numGamesPlayed
+
+- story: GetInfo winLossRecord
+  steps:
+  - intent: GetInfo_winLossRecord
+  - action: action_winLossRecord
+
+- story: GetInfo playingNow
+  steps:
+  - intent: GetInfo_playingNow
+  - action: action_playingNow
+
+- story: GetInfo lastOpponent
+  steps:
+  - intent: GetInfo_lastOpponent
+  - action: action_lastOpponent
+
+- story: GetInfo nextOpponent
+  steps:
+  - intent: GetInfo_nextOpponent
+  - action: action_nextOpponent
+
+- story: GetInfo lastScore
+  steps:
+  - intent: GetInfo_lastScore
+  - action: action_lastScore
+
+- story: GetInfo manager
+  steps:
+  - intent: GetInfo_manager
+  - action: action_manager
+
+- story: GetInfo leaguePosition
+  steps:
+  - intent: GetInfo_leaguePosition
+  - action: action_leaguePosition
+
+- story: GetInfo nextGameDate
+  steps:
+  - intent: GetInfo_nextGameDate
+  - action: action_nextGameDate

@@ -1,0 +1,161 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - I have some English Premier League soccer questions, please.
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - Bye-bye.
+    - see you later
+    - that's all I needed
+    - that's all I needed to know
+    - Thank you very much for your help
+    - Until next time.
+    - Have a nice day.
+    - All right, thank you so much.
+    - that was all I needed to know.
+    - Thank you for your help.
+    - I thank you for you helping me. I'm all done, Assistant.
+    - Thank you so much for that information today.
+    - Thank you very much.
+    - Thank you.
+    - Appreciate it.
+    - That's pretty much all the information I was looking about [Stoke City](team).
+    - You gave me all the things that I needed, so thank you for that.
+    - Alright. Thanks. You have been a big help.
+    - That'll be it for me. Thanks.
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: GetInfo_numGamesPlayed
+  examples: |
+    - How many games has [Burnley](team) played so far?
+    - How many games have they played so far?
+    - How many games have they played so far this year?
+
+- intent: GetInfo_winLossRecord
+  examples: |
+    - I need to know the record of [Manchester City](team).
+    - I'm wondering what record right now does [West Ham](team) have?
+    - How is [Watford](team) doing?
+    - what is [AFC Bournemouth](team) record right now?
+    - I am looking for information about the soccer team called [Burnley](team).
+    - What is [Arsenal](team)'s record?
+    - Could you tell me what [Everton](team)'s current record is?
+    - I'd like to know about the [Leicester City](team).
+    - I'm a fan of the [Stoke City](team) of the EPL. What is their record right now?
+    - I was wondering what's [Brighton](team) record right now?
+    - I want to know the record of [Aston Villa](team).
+
+- intent: GetInfo_playingNow
+  examples: |
+    - Are they playing right now?
+    - Is [West Ham United](team) playing right now?
+    - Who is [Berkeley](team) playing right now?
+
+- intent: GetInfo_lastOpponent
+  examples: |
+    - Who did they play last?
+    - I'm wondering in their last game who did [West Ham](team) play?
+    - Who did they play last?
+    - Well. How is [Leicester City](team) doing right now? What place are they in?
+    - I would like to know about [Stoke City](team) and who did they play last?
+    - Who did [West Ham](team) play last?
+    - Who did they play against lastly?
+    - who'd they play last?
+    - who did they last play?
+
+- intent: GetInfo_nextOpponent
+  examples: |
+    - Who will [Burnley](team) play against next?
+    - Who are they playing next?
+    - Who are they playing now?
+    - Who will they play next?
+    - Who will they play against next and how did they do in their last game?
+    - who do they play next?
+    - Who will [Berkeley](team) play next?
+    - Who are they playing in their next game?
+    - Who will they play against next?
+
+- intent: GetInfo_lastScore
+  examples: |
+    - What was the score of the last game?
+    - How did [Burnley](team) do in their last game?
+    - how did [Huddersfield](team) do in their previous game?
+    - What was the final score?
+    - I'm wondering what was the final score
+    - They won their last game?
+    - What was the score of their last game?
+    - How did they do their last game?
+    - how did they do last game?
+    - And what was the score of their last game?
+    - How did they play the last game? Did they lose?
+    - What was the score of [West Ham](team)'s last game?
+    - Who will they play against next and how did they do in their last game?
+    - How did they do in their last game?
+
+- intent: GetInfo_manager
+  examples: |
+    - Who's their manager?
+    - Who is their manager?
+    - Who is the manager for [Burnley](team)?
+    - I'm wondering who's the current manager for [West Ham](team)?
+    - who is the manager of [Chelsea](team)?
+    - Who's their manager currently?
+    - Who is [Berkeley](team)'s manager?
+    - Who is their manager this year?
+
+- intent: GetInfo_leaguePosition
+  examples: |
+    - What place are [Huddersfield](team)?
+    - What place is [Everton](team) in?
+    - What place is [Southampton](team) in?
+    - Could you tell me how [Chelsea](team) in the English Premier League is doing this season?
+    - How's [West Ham United](team) doing?
+    - I need to know how [Stoke City](team) English Premier League soccer team is doing?
+    - What place is the [Newcastle United](team) team in, please?
+    - I was looking for some information on [Stoke City](team), the English Premier soccer. And I was just wondering how they were doing?
+    - I want to know, how [Burnley](team) is doing this year.
+
+- intent: GetInfo_nextGameDate
+  examples: |
+    - When will they play their next game?
+    - When do they play their next name?
+    - When is their next game?
